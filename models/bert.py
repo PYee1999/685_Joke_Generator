@@ -2,6 +2,8 @@
 # https://www.scaler.com/topics/nlp/bert-question-answering/
 
 from transformers import BertTokenizer, BertForSequenceClassification, BertForQuestionAnswering
+from tqdm import tqdm
+import pandas as pd
 import torch
 
 # Load the BERT model and tokenizer
@@ -11,11 +13,22 @@ model = BertForQuestionAnswering.from_pretrained('deepset/bert-base-cased-squad2
 
 """ DATA PREPARATION """
 
-data = [("Hello, how can I help you today?", "Hi, I need some help with my order."),
-        ("Sure, what seems to be the problem?", "I never received my order and it's been over a week."),
-        ("I'm sorry to hear that. Let me check on that for you.", "Thank you. Can you also check on the status of my refund?"),
-        ("Certainly. I will check on that as well.", "Thank you. Can you also provide me with the contact information for your supervisor?"),
-        ("Of course. Here is the phone number and email address for our supervisor.", "Thank you for your help.")]
+# Get Jokes dataset
+jokes_dataset = pd.read_csv("./Dataset/jokes.csv", header=None)
+jokes_dataset = jokes_dataset.sample(frac=1).reset_index(drop=True)
+jokes_dataset = jokes_dataset.iloc[:,1:3].values
+
+data = []
+for joke, prompt in jokes_dataset[:100]:
+    pair = (prompt, joke)
+    data.append(pair)
+# print(f"data:\n{data}")
+
+# data = [("Hello, how can I help you today?", "Hi, I need some help with my order."),
+#         ("Sure, what seems to be the problem?", "I never received my order and it's been over a week."),
+#         ("I'm sorry to hear that. Let me check on that for you.", "Thank you. Can you also check on the status of my refund?"),
+#         ("Certainly. I will check on that as well.", "Thank you. Can you also provide me with the contact information for your supervisor?"),
+#         ("Of course. Here is the phone number and email address for our supervisor.", "Thank you for your help.")]
 
 questions = [item[0] for item in data]
 answers = [item[1] for item in data]
@@ -90,7 +103,7 @@ labels = [0 if i < len(questions) else 1 for i in range(len(questions) + len(ans
 labels = torch.tensor(labels).to(device)
 
 # Set the training loop
-for epoch in range(num_epochs):
+for epoch in tqdm(range(num_epochs)):
 
     # Clear the gradients
     model.zero_grad()
