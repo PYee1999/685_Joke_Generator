@@ -1,14 +1,14 @@
 import requests
 
 
-def generate_text(prompt, api_key, endpoint):
+def generate_text(prompt, api_key, endpoint, model):
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {api_key}'
     }
 
     data = {
-        'model': 'gpt-3.5-turbo',
+        'model': model,
         'messages': [
             {'role': 'system', 'content': 'You are a helpful assistant.'},
             {'role': 'user', 'content': prompt}
@@ -30,7 +30,7 @@ def generate_text(prompt, api_key, endpoint):
         return None
 
 
-def getPrompt(joke, api_key, endpoint):
+def getPrompt(joke, api_key, endpoint, model):
     prompt = """
     Joke: {} 
     INSTRUCTIONS: Given below is a list of jokes along with their prompts:
@@ -48,5 +48,5 @@ def getPrompt(joke, api_key, endpoint):
     """.format(joke)
 
     # Generate text
-    generated_text = generate_text(prompt, api_key, endpoint)
+    generated_text = generate_text(prompt, api_key, endpoint, model)
     return generated_text
