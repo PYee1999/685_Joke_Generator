@@ -92,11 +92,11 @@ labels = torch.tensor(labels).to(device)
 # Set the training loop
 for epoch in range(num_epochs):
 
-    # Set the training mode
-    model.train()
-
     # Clear the gradients
     model.zero_grad()
+
+    # Set the training mode
+    model.train()
 
     # Forward pass
     output = model(input_ids, attention_mask=attention_masks)
