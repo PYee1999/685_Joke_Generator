@@ -1,6 +1,8 @@
 # LINK: https://www.geeksforgeeks.org/explanation-of-bert-model-nlp/
 # https://www.scaler.com/topics/nlp/bert-question-answering/
 
+from dataset.process_data import preprocess_jokes
+from models.train_data import convert_data_to_bert_input, normal_train
 from transformers import BertTokenizer, BertForSequenceClassification, BertForQuestionAnswering
 from tqdm import tqdm
 import pandas as pd
@@ -14,15 +16,7 @@ model = BertForQuestionAnswering.from_pretrained('deepset/bert-base-cased-squad2
 """ DATA PREPARATION """
 
 # Get Jokes dataset
-jokes_dataset = pd.read_csv("./Dataset/jokes.csv", header=None)
-jokes_dataset = jokes_dataset.sample(frac=1).reset_index(drop=True)
-jokes_dataset = jokes_dataset.iloc[:,1:3].values
-
-data = []
-for joke, prompt in jokes_dataset[:100]:
-    pair = (prompt, joke)
-    data.append(pair)
-# print(f"data:\n{data}")
+data = preprocess_jokes("./Dataset/jokes.csv")
 
 # data = [("Hello, how can I help you today?", "Hi, I need some help with my order."),
 #         ("Sure, what seems to be the problem?", "I never received my order and it's been over a week."),
@@ -40,100 +34,35 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 
 # Convert the data to input format for BERT
-question_input_ids = []
-question_attention_masks = []
-for i in range(len(questions)):
-    # Tokenize the question
-    question_tokens = tokenizer.tokenize(questions[i])
-    
-    max_length = 512
-    # Pad the input tokens
-    question_tokens = question_tokens + [tokenizer.pad_token] * (max_length - len(question_tokens))
-
-    # Create the input ids for the BERT model
-    question_input_ids.append(tokenizer.convert_tokens_to_ids(question_tokens))
-
-    # Create the attention masks for the input tokens
-    question_attention_masks.append([1 if token != tokenizer.pad_token else 0 for token in question_tokens])
-
-answer_input_ids = []
-answer_attention_masks = []
-for i in range(len(answers)):
-    # Tokenize the answer
-    answer_tokens = tokenizer.tokenize(answers[i])
-
-    # Pad the input tokens
-    answer_tokens = answer_tokens + [tokenizer.pad_token] * (max_length - len(answer_tokens))
-
-    # Create the input ids for the BERT model
-    answer_input_ids.append(tokenizer.convert_tokens_to_ids(answer_tokens))
-
-    # Create the attention masks for the input tokens
-    answer_attention_masks.append([1 if token != tokenizer.pad_token else 0 for token in answer_tokens])
-
-# Concatenate the question and answer input lists
-input_ids = question_input_ids + answer_input_ids
-attention_masks = question_attention_masks + answer_attention_masks
-
-# Convert the input ids and attention masks to tensors
-input_ids = torch.tensor(input_ids).to(device)
-attention_masks = torch.tensor(attention_masks).to(device)
+input_ids, attention_masks = convert_data_to_bert_input(device, tokenizer, questions, answers)
 
 
 """ TRAINING """
-
-# Define the criterion
-criterion = torch.nn.CrossEntropyLoss()
-
-# Define optimizer
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
-
-def calculate_accuracy(predictions, labels):
-    correct_predictions = 0
-    for i in range(len(predictions)):
-        if predictions[i] == labels[i]:
-            correct_predictions += 1
-    return correct_predictions / len(predictions)
-
-# Set the number of epochs
-num_epochs = 5
 
 # Set the labels for the data
 labels = [0 if i < len(questions) else 1 for i in range(len(questions) + len(answers))]
 labels = torch.tensor(labels).to(device)
 
-# Set the training loop
-for epoch in tqdm(range(num_epochs)):
-
-    # Clear the gradients
-    model.zero_grad()
-
-    # Set the training mode
-    model.train()
-
-    # Forward pass
-    output = model(input_ids, attention_mask=attention_masks)
-
-    # Calculate the loss
-    loss = criterion(output[0], labels)
-
-    # Backward pass
-    loss.backward()
-
-    # Update the parameters
-    optimizer.step()
-
-    # Print the loss and accuracy
-    print("Epoch {}/{} - Loss: {:.5f} - Accuracy: {:.5f}".format(epoch + 1, num_epochs, loss.item(), calculate_accuracy(output[0].argmax(dim=1).cpu().numpy(), labels.cpu().numpy())))
+normal_train(input=input_ids, 
+             labels=labels, 
+             model=model, 
+             optim="adam", 
+             learning_rate=1e-4, 
+             criterion=torch.nn.CrossEntropyLoss(), 
+             num_epochs=5, 
+             attention_masks=attention_masks)
 
 
 """ MAKE PREDICTION """
+
+max_length = 512
 
 # Set the model to eval mode
 model.eval()
 
 # Define the input
-input_text = "I'm sorry to hear that. Let me check on that for you."
+input_text = "Tell me a joke about cars"
+print("Input:", input_text)
 
 # Tokenize the input
 input_tokens = tokenizer.tokenize(input_text)
