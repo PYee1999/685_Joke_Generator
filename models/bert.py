@@ -1,12 +1,10 @@
 # LINK: https://www.geeksforgeeks.org/explanation-of-bert-model-nlp/
 # https://www.scaler.com/topics/nlp/bert-question-answering/
 
-from dataset.process_data import preprocess_jokes
+from Dataset.process_data import preprocess_jokes
 from models.train_data import convert_data_to_bert_input, normal_train
-from transformers import BertTokenizer, BertForSequenceClassification, BertForQuestionAnswering
-from tqdm import tqdm
-import pandas as pd
-import torch
+from transformers import BertTokenizer, BertForSequenceClassification, BertForQuestionAnswering # type: ignore
+import torch # type: ignore
 
 # Load the BERT model and tokenizer
 # tokenizer = BertTokenizer.from_pretrained('deepset/bert-base-cased-squad2')

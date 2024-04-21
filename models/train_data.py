@@ -1,5 +1,5 @@
-from tqdm import tqdm
-import torch
+from tqdm import tqdm # type: ignore
+import torch # type: ignore
 
 
 def calculate_accuracy(predictions, labels):

@@ -6,8 +6,8 @@
 # Question Answering
 # https://huggingface.co/aware-ai/bart-squadv2#:~:text=To%20use%20BART%20for%20question,comparable%20to%20ROBERTa%20on%20SQuAD.
 
-from transformers import BartTokenizer, BartForQuestionAnswering
-import torch
+from transformers import BartTokenizer, BartForQuestionAnswering # type: ignore
+import torch # type: ignore
 
 tokenizer = BartTokenizer.from_pretrained('facebook/bart-large')
 model = BartForQuestionAnswering.from_pretrained('facebook/bart-large')

@@ -1,6 +1,6 @@
 from getPrompt import getPrompt
-import pandas as pd
-import numpy as np
+import pandas as pd # type: ignore
+import numpy as np # type: ignore
 
 df = pd.read_csv('shortjokes.csv')
 start = 1012  # Replace with index of last generated datapoint. Check with jokes.csv to find last index.
@@ -9,7 +9,7 @@ df = df.iloc[start:end].copy()
 jokes = df['Joke'].values
 jokes = jokes.flatten()
 prompts = []
-api_key = ''
+api_key = '3f06bb7945192b6e58e9d4acd1d265fe51a1478015fb5cac5d67c3ca274b3c94'
 endpoint = 'https://api.together.xyz/v1/chat/completions'
 model = 'meta-llama/Llama-3-70b-chat-hf'
 for joke in jokes:
