@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 
 df = pd.read_csv('shortjokes.csv')
-start = 1012  # Replace with index of last generated datapoint. Check with jokes.csv to find last index.
-end = start + 10  # Generates for 500 datapoints in one run (takes around 10 minutes).
+start = 100  # Replace with index of last generated datapoint. Check with jokes.csv to find last index.
+end = start + 100 # Generates for 500 datapoints in one run (takes around 10 minutes).
 df = df.iloc[start:end].copy()
 jokes = df['Joke'].values
 jokes = jokes.flatten()
