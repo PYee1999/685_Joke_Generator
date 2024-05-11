@@ -30,7 +30,7 @@ def generate_text(prompt, api_key, endpoint, model):
         return None
 
 
-def getPrompt(joke, api_key, endpoint, model):
+def getPrompt(joke, api_key, endpoint, model='mistralai/Mixtral-8x7B-Instruct-v0.1'):
     prompt = """
     Joke: {} 
     INSTRUCTIONS: Given below is a list of jokes along with their prompts:
