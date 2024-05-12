@@ -1,10 +1,11 @@
-import pandas as pd # type: ignore
+import pandas as pd  # type: ignore
+
 
 def preprocess_jokes(dir: str) -> list:
     # Extract Jokes CSV dataset
     jokes_dataset = pd.read_csv(dir, header=None)
     jokes_dataset = jokes_dataset.sample(frac=1).reset_index(drop=True)
-    jokes_dataset = jokes_dataset.iloc[:,1:3].values
+    jokes_dataset = jokes_dataset.iloc[:, 1:3].values
 
     # Convert data into a list of tuples
     data = []
@@ -15,6 +16,7 @@ def preprocess_jokes(dir: str) -> list:
 
     # Return list
     return data
+<<<<<<< HEAD
 
 
 def export_jokes_txt(df):
@@ -63,3 +65,5 @@ def create_joke_file():
     output_dir = "output"
 
     return train_file, output_dir
+=======
+>>>>>>> 2f4ac9e (add ratings.csv)

@@ -4,7 +4,7 @@
   <component name="ProjectRootManager">
 =======
   <component name="Black">
-    <option name="sdkName" value="Python 3.11" />
+    <option name="sdkName" value="Python 3.11 (nlpProject)" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="Python 3.11 (nlpProject)" project-jdk-type="Python SDK">
 >>>>>>> d440e22 (update evaluation)

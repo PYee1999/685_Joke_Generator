@@ -1,4 +1,4 @@
-from getRating import getRating, getEval
+from  getEvaluation import getEval
 import pandas as pd
 import numpy as np
 

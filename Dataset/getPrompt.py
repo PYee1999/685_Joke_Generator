@@ -32,21 +32,28 @@ def generate_text(prompt, api_key, endpoint, model):
 
 def getPrompt(joke, api_key, endpoint, model='mistralai/Mixtral-8x7B-Instruct-v0.1'):
     prompt = """
-    Joke: {} 
-    INSTRUCTIONS: Given below is a list of jokes along with their prompts:
+    INSTRUCTIONS: Given below is a list of jokes along with their prompts. Generate a similar prompt for the joke I gave. Only give me the prompt, do not have 'Prompt: ' in it.
     
     Joke: [me narrating a documentary about narrators] I can't hear what they're saying cuz I'm talking
-    Prompt: Tell me a joke about a documentary?
+    Prompt: Tell me a joke about a documentary.
     
     Joke: Telling my daughter garlic is good for you. Good immune system and keeps pests away.Ticks, mosquitos, vampires... men.
-    Prompt: Give me a funny parent-child joke?
+    Prompt: Give me a funny parent-child quip.
     
     Joke: If I could have dinner with anyone, dead or alive... ...I would choose alive.
-    Prompt: Tell me a creepy joke?
+    Prompt: Can you craft a creepy joke?
     
-    Generate a similar prompt for the joke I gave. Only give me the prompt, do not have 'Prompt: ' in it.
+    Joke: 'What do you get when you cross a sheep stealer with royalty? Mutton Looter King'
+    Prompt: Can you come up with a humour that's a pun?
+    
+    Joke: 'Thought I saw a walking burrito but it was just a pug in a raincoat.'
+    Prompt: Make me laugh with a joke about pug.
+    
+    Joke: {} 
+    
     """.format(joke)
 
     # Generate text
     generated_text = generate_text(prompt, api_key, endpoint, model)
     return generated_text
+

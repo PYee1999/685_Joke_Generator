@@ -1,10 +1,10 @@
-from getRating import getRating
+from getEvaluation import getRating
 import pandas as pd
 import numpy as np
 
 
 def loadRating(start, end):
-    df_total = pd.read_csv('../Evaluation/Jokes.csv')
+    df_total = pd.read_csv('../Evaluation/jokes_test_dataset.csv')
     df = df_total.iloc[start:end].copy()
     prompts = df.iloc[:, 2].values
     jokes = df.iloc[:, 1].values
@@ -20,8 +20,8 @@ def loadRating(start, end):
         print(rating)
         ratings.append(rating)
 
-    df['Rating'] = np.array(rating)
+    df['Rating'] = np.array(ratings)
     df.to_csv('ratings.csv', mode='a', header=False, index=False)
 
 
-loadRating(1, 50)
+loadRating(100, 101)
