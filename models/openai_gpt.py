@@ -1,7 +1,7 @@
 import pandas as pd
 from transformers import GPT2LMHeadModel, GPT2Tokenizer, TextDataset, DataCollatorForLanguageModeling, Trainer, TrainingArguments
 
-jokes_dataset = pd.read_csv("../Dataset/jokes.csv", header=None)
+jokes_dataset = pd.read_csv("../Dataset/jokes.csv", on_bad_lines='skip', header=None)
 jokes_dataset = jokes_dataset.sample(frac=1).reset_index(drop=True)
 jokes_dataset = jokes_dataset.iloc[:,1:3].values
 

@@ -1,7 +1,7 @@
 # LINK: https://www.geeksforgeeks.org/explanation-of-bert-model-nlp/
 # https://www.scaler.com/topics/nlp/bert-question-answering/
 
-from Dataset.process_data import preprocess_jokes
+from dataset.process_data import preprocess_jokes
 from models.train_data import convert_data_to_bert_input, normal_train
 from transformers import BertTokenizer, BertForSequenceClassification, BertForQuestionAnswering # type: ignore
 import torch # type: ignore
@@ -47,7 +47,7 @@ normal_train(input=input_ids,
              optim="adam", 
              learning_rate=1e-4, 
              criterion=torch.nn.CrossEntropyLoss(), 
-             num_epochs=5, 
+             num_epochs=10, 
              attention_masks=attention_masks)
 
 
@@ -59,7 +59,7 @@ max_length = 512
 model.eval()
 
 # Define the input
-input_text = "Tell me a joke about cars"
+input_text = "Tell me a joke about dogs"
 print("Input:", input_text)
 
 # Tokenize the input
