@@ -38,20 +38,18 @@ def getPrompt(joke, api_key, endpoint, model='mistralai/Mixtral-8x7B-Instruct-v0
     Prompt: Tell me a joke about a documentary.
     
     Joke: Telling my daughter garlic is good for you. Good immune system and keeps pests away.Ticks, mosquitos, vampires... men.
-    Prompt: Give me a funny parent-child quip.
+    Prompt: Give me a funny quip about parents and kids.
     
     Joke: If I could have dinner with anyone, dead or alive... ...I would choose alive.
-    Prompt: Can you craft a creepy joke?
-    
-    Joke: 'What do you get when you cross a sheep stealer with royalty? Mutton Looter King'
-    Prompt: Can you come up with a humour that's a pun?
-    
+    Prompt: Can you craft a joke about dinner?
+        
     Joke: 'Thought I saw a walking burrito but it was just a pug in a raincoat.'
-    Prompt: Make me laugh with a joke about pug.
+    Prompt: Make me laugh with a joke about a pug.
     
     Joke: {} 
+    Prompt: {}
     
-    """.format(joke)
+    """.format(joke, '')
 
     # Generate text
     generated_text = generate_text(prompt, api_key, endpoint, model)

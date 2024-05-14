@@ -1,5 +1,5 @@
 import requests
-
+import time
 
 def extract_first_integer(sentence):
     words = sentence.split()
@@ -41,6 +41,27 @@ def generate_text(prompt, api_key, endpoint, model):
         return None
 
 
+def getFunnyScore(joke):
+    API_TOKEN = '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'
+    API_URL = "https://api-inference.huggingface.co/models/mohameddhiab/humor-no-humor"
+    headers = {"Authorization": f"Bearer {API_TOKEN}"}
+    for _ in range(3):
+        try:
+            response = requests.post(API_URL, headers=headers, json=joke)
+            response.raise_for_status()  # Check for any HTTP errors
+            humour = response.json()
+            if humour[0][0]['label'] == 'HUMOR' and humour[0][0]['score'] >= 0.9:
+                return 2
+            elif humour[0][0]['label'] == 'HUMOR' and humour[0][0]['score'] < 0.9:
+                return 1
+            else:
+                return 0
+        except requests.exceptions.RequestException as e:
+            pass
+    return 0
+
+
+'''
 def getFunnyScore(joke, api_key, endpoint, model):
     Instruction = """
     INSTRUCTIONS: Given a joke, rate the joke based on the below rubric.
@@ -69,32 +90,7 @@ def getFunnyScore(joke, api_key, endpoint, model):
     # Generate text
     score = generate_text(Instruction, api_key, endpoint, model)
     return extract_first_integer(score)
-
-
-def getCompleteScore(joke, api_key, endpoint, model):
-    Instruction = """
-    INSTRUCTIONS: Given a sentence, rate the sentence based on the below rubric.
-    a. give score 1 if the sentence is complete.
-    b. give score 0 if the sentence is not complete.
-    
-    Only return the score value, do not give any explanation. See the examples below.
-    
-    Sentence: This is a way to complete a sentence.
-    Score: 1
-    
-    Sentence: what did this 
-    Score: 0
-    
-    Generate a similar Score for the Sentence I gave. Follow the rubric exactly.
-    Only give me the Score and nothing else, do not have 'Score: ' in it.
-    
-    Sentence: {} 
-    Score: {}
-    """.format(joke, '')
-
-    # Generate text
-    score = generate_text(Instruction, api_key, endpoint, model)
-    return extract_first_integer(score)
+'''
 
 
 def getGrammarScore(joke, api_key, endpoint, model):
@@ -126,26 +122,29 @@ def getGrammarScore(joke, api_key, endpoint, model):
 def getPromptScore(joke, prompt, api_key, endpoint, model):
     Instruction = """
     INSTRUCTIONS: Given a prompt and joke, rate the joke based on the below rubric.
-    a. give score 2 if the joke matches the prompt perfectly.
-    b. give score 1 if the joke matches the prompt sufficiently.
-    c. give score 0 if the joke does not match the prompt.
+    a. give score 2 if the joke directly corresponds to the prompt.
+    b. give score 1 if the joke somewhat relates to the prompt.
+    c. give score 0 if the joke does not align with the prompt.
     
     Only return the score value, do not give any explanation. See the examples below.
     
     Joke: [me narrating a documentary about narrators] I can't hear what they're saying cuz I'm talking
     Prompt: Tell me a joke about a documentary?
     Score: 2
+    Reason: The joke is about narrators narrating a documentary which corresponds to the given prompt.
     
     Joke: is it light outside? 
     Prompt: Give me a dark joke?
     Score: 1
+    Reason: This is somewhat ok as light relates to dark.
     
     Joke: why did the chicken cross the road? it wanted to go to the other side.
     Prompt: Give me a joke about a pencil?
     Score: 0
+    Reason: Joke does not align with prompt as it has nothing to do with a pencil
     
     Generate a similar Score for the Joke and Prompt I gave. Follow the rubric exactly.
-    Only give me the Score and nothing else, do not have 'Score: ' in it.
+    Only give me the Score and nothing else, do not have 'Score: ' in it. Do not give me Reason.
     
     Prompt: {}
     Joke: {} 
@@ -157,12 +156,19 @@ def getPromptScore(joke, prompt, api_key, endpoint, model):
     return extract_first_integer(score)
 
 
-def getRating(joke, prompt, api_key, endpoint, model='mistralai/Mixtral-8x7B-Instruct-v0.1'):
+def getRating(joke, prompt, api_key, endpoint, model='meta-llama/Llama-3-70b-chat-hf'):
     promptScore = getPromptScore(joke, prompt, api_key, endpoint, model)
-    funnyScore = getFunnyScore(joke, api_key, endpoint, model)
-    completeScore = getCompleteScore(joke, api_key, endpoint, model)
+    funnyScore = getFunnyScore(joke)
     grammarScore = getGrammarScore(joke, api_key, endpoint, model)
-    return str(promptScore + funnyScore + completeScore + grammarScore)
+    lengthScore = 0
+    if len(joke) < 100:
+        lengthScore = 1
+    '''
+    print('Prompt', promptScore)
+    print('Funny', funnyScore)
+    print('Grammar', grammarScore)
+    '''
+    return [promptScore, funnyScore, grammarScore, lengthScore]
 
 
 def getEval(prompt, preJoke, fineJoke, api_key, endpoint, model='mistralai/Mixtral-8x7B-Instruct-v0.1'):

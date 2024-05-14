@@ -1,5 +1,4 @@
-import pandas as pd  # type: ignore
-
+import pandas as pd
 
 def preprocess_jokes(dir: str) -> list:
     # Extract Jokes CSV dataset
