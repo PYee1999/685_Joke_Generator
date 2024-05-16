@@ -1,0 +1,185 @@
+Prompts,Jokes,promptScores,funnyScores,grammarScores,lengthScores,totalScores
+Make me laugh with a joke about Christmas.,"What do you call a baby Jesus who is a good cook?
+The tastiest babe in the world.
+<eos>",2,1,1,1,5
+Give me a joke about a common household task.,"My mom said I should do the dishes more often. I guess I'll be doing them all night.
+<eos>",2,0,1,1,4
+Make me laugh with a joke about an unusual diet.,"My mom is a vegetarian and my dad is a vegan. I'm a pescatarian. I'm the perfect balance of both.
+<eos>",2,1,1,0,4
+Give me a joke about a job interview.,"I was a little nervous about my job interview today. I was a little nervous about my job interview today. I was a little nervous about my job interview today.
+<eos>",2,0,0,0,2
+Make me laugh with a joke about a relationship.,My wife said I have a lot of baggage. I guess she's talking about my relationship with my ex.<eos>,2,1,1,1,5
+Can you come up with a pun about time?,What do you call a time machine that is always late? A tardy temporal device.<eos>,2,2,1,1,6
+Can you come up with a joke about dolphins?,What do you call a dolphin that is always getting lost at sea? A lonely pod.<eos>,2,1,1,1,5
+Tell me a joke about a high school reunion.,"The reunion was a big deal. I was the only one to have a real job.
+<eos>",2,0,1,1,4
+Give me a joke about a math joke that's a play on words.,What do you call a number that is always dividing by itself? A whole number.<eos>,2,0,1,1,4
+Make me laugh with a joke about the DMV.,"Have you ever been to the DMV and been given a number that is not in order?
+It's a real slap in the face when you get a number that is not in order.<eos>",2,0,1,0,3
+Make me laugh with a joke about procrastination.,The most common form of procrastination is the act of delaying a task by doing something else that is more fun.<eos>,2,1,1,0,4
+Make me laugh with a joke about a horse.,"What do you call a horse that is always getting into trouble? A mischievous pony.
+<eos>",2,1,1,1,5
+Give me a joke about a job interview.,"I was a little nervous about my job interview today. I was a little nervous about my job interview today. I was a little nervous about my job interview today.
+<eos>",2,0,0,0,2
+Make me laugh with a joke about a plane.,The plane is a very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very,1,0,0,0,1
+Give me a joke about technology malfunctioning.,"The other day I was trying to get my computer to play music. I was using a USB flash drive. I was able to get the music to play, but the computer was so happy to have a USB flash drive in it that it started playing music.<eos>",2,1,1,0,4
+Make me laugh with a joke about a disease.,"If I have a disease that is not a common disease, I will be a very unique person.
+<eos>",2,0,1,1,4
+Make me laugh with a joke about Jehovah's Witnesses.,The Jehovah's Witnesses are the only people who are not afraid of a little good ass kicking.<eos>,2,2,1,1,6
+Give me a math joke.,"What do you call a number that is not a whole number? A fractional number.
+<eos>",2,0,1,1,4
+Make me laugh with a joke about a circus animal.,"What do you call a fat lion in a circus? A big cat.
+<eos>",2,1,1,1,5
+Can you come up with a joke about an exorcist?,"What do you call an exorcist that is a good cook?  
+A good cook-ist
+<eos>",2,1,1,1,5
+Make me laugh with a joke about Batman.,Batman is a good guy. But he's not a good dad.<eos>,2,0,1,1,4
+Give me a joke about summer camps.,"The camp counselor is a good person. He's got a good heart. He's a good person. He's got a good heart. He's a good person. He's got a good heart.
+<eos>",2,0,0,0,2
+Create a humorous joke about paranoia.,"If I was a paranoiac, I would probably be afraid of the people I know.<eos>",2,1,1,1,5
+Tell me a joke about adoption.,"The stork is a good dad. He adopted me and my family.
+<eos>",2,1,1,1,5
+Give me a joke about a beer slogan.,"What's the slogan for a beer that is a little bit too sweet?
+The answer is ""The only thing I'm sweet on is my beer.""<eos>",2,0,1,0,3
+Give me a joke about a date.,"What do you call a date that is always on time? A good time.
+<eos>",2,1,1,1,5
+Tell me a joke about clickbait.,"Click bait is the most common way to get me to do something I will regret later.
+<eos>",2,2,1,1,6
+Make me laugh with a joke about social media.,What do you call a social media post that is a meme of a meme? A memeception.<eos>,2,1,1,1,5
+Tell me a joke about a therapy session.,"The therapist said, ""You have a problem with your relationship with your ex.""
+The patient said, ""No, I don't. I have a problem with my relationship with my current wife.""
+The therapist said, ""No, I'm talking about your ex.""
+The patient said, ""No, I'm talking about my current wife.""
+The therapist said, ""No, I'm talking about your ex.""
+The patient said, ""No, I'm talking about my current wife.""<eos>",2,0,1,0,3
+Give me a joke about a book title.,"The book ""The Book Thief"" is a good book. But I have to say, the book thief is a real pain.
+<eos>",2,1,1,1,5
+Create a joke about a funeral.,"The undertaker was a good guy. He was very good at making me feel at home.
+<eos>",2,0,1,1,4
+Give me a joke about politics.,The Republican Party is like a bunch of people who are so afraid of the future that they want to go back to the 19th century.<eos>,2,1,1,0,4
+Make me laugh with a joke about a diet.,"What do you call a diet that is not working? A big fat ass.
+<eos>",2,1,1,1,5
+Give me a joke about an apology.,"The other day I apologized to a woman I was driving by and she said ""No problem, I was just getting in the shower.""
+<eos>",2,0,1,0,3
+Give me a joke about outdated technology.,"The other day I was on a computer and I was trying to find a way to get my floppy disk to work. I tried to do a few different things to get it to work but I couldn't get it to work.
+<eos>",1,0,1,0,2
+Make me laugh with a joke about a lightbulb.,"What do you call a lightbulb that is always on?
+A hothead
+<eos>",2,1,1,1,5
+Give me a joke about being out of touch with modern culture.,"What do you call a person who is out of touch with modern culture? A boomerang.
+<eos>",2,0,1,1,4
+Give me a joke about marriage.,"If you have a good relationship with your wife, you have a good relationship with your wife.
+<eos>",1,0,1,1,3
+Can you come up with a joke about a stalker?,"If I was a stalker, I would have a good time seeing you get your head blown off.<eos>",2,0,1,1,4
+Make me laugh with a joke about a chicken.,What do you call a chicken that's always getting into trouble? A rooster in a chicken run.<eos>,2,0,1,1,4
+Give me a joke about a spy agency.,"The spy agency is a very good place to get a good night sleep.
+<eos>",2,1,1,1,5
+Make me laugh with a joke about selfies.,"What do you call a selfie that is taken in a dark room? A darkie
+<eos>",2,2,1,1,6
+Make me laugh with a joke about a terrorist organization.,"The terrorist organization is a bunch of people who are so good at what they do that they have a lot of people in the world wanting to be a part of the organization.
+<eos>",2,1,1,0,4
+Give me a joke about a historical figure.,"Abraham Lincoln was a good president, but he was a terrible actor.
+<eos>",2,1,1,1,5
+Give me a joke about a conversation.,"What do you call a conversation between two people who are not in the same room? A telepathy problem.
+<eos>",2,1,1,0,4
+Make me laugh with a joke about Harry Potter.,"What do you call a wizard who is a member of the Red Sox?
+A Red Sox-ter
+<eos>",1,0,1,1,3
+Give me a joke about online shopping.,"I've been shopping online for hours and I've not been able to get a single item. I guess I'm just a bad shopper.
+<eos>",2,0,1,0,3
+Give me a joke about body parts.,"What do you call a man with a long head and a big back? A good head and a good back.
+<eos>",2,0,1,1,4
+Give me a joke about a woman's preferences.,"If I was a woman, I'd be a lesbian. I'd be a lesbian. I'd be a lesbian.<eos>",2,0,1,1,4
+Make me laugh with a joke about office etiquette.,"What do you call a boss who is always giving you a hard time? A real pain in the ass.
+<eos>",2,1,1,1,5
+Give me a humorous joke about a birthday party.,The only people I have ever seen at a birthday party in a tux and a black dress are my parents.<eos>,2,0,1,0,3
+Make me laugh with a joke about a potato.,"What do you call a potato that's been in the oven for too long?
+Potato crispy
+<eos>",2,2,1,1,6
+Tell me a joke about airport etiquette.,"The most common thing to hear on a plane is a baby being yelled at. The second most common thing is a baby being yelled at in a different language.
+<eos>",1,2,1,0,4
+Make me laugh with a joke about math.,"The Pythagorean theorem is a joke. A square is a rectangle.
+<eos>",2,0,1,1,4
+Create a joke about a death investigation.,The death investigation is a very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very,1,0,0,0,1
+Give me a joke about a month.,"What month is it today?
+The month of August.
+The month of August is the month of the month.
+<eos>",1,0,0,1,2
+Give me a joke about a job performance review.,The office manager is doing a performance review. He's not very good at it. He's not very good at it. He's not very good at it.<eos>,1,0,0,0,1
+Give me a joke about the Pope.,"The Pope is a very good cook. He's made a lot of people happy.
+<eos>",2,0,1,1,4
+Give me a joke about a bad comedian.,"The other day I was at a bar and I saw a comedian doing a joke about a man who was a little bit too friendly.
+The joke was a little bit too friendly.<eos>",2,0,1,0,3
+Give me a joke about a medical condition.,"If you have a condition that makes you feel like you have a lot of hair, you have a lot of hair.<eos>",2,1,1,0,4
+Make me laugh with a joke about being single.,"What do you call a single woman who is a good cook and a good person? A catch.
+<eos>",2,1,1,1,5
+Make me laugh with a joke about a musician.,The musician was a good one but he was a bit of a mess. He was playing a song and he was just a little bit out of tune.<eos>,2,0,1,0,3
+Can you come up with a joke about an octopus?,What do you call a baby octopus that is always getting into trouble? A mischievous inkwell.<eos>,2,1,1,1,5
+Give me a joke about fashion advice.,"What do you call a fashion model who is always getting wet? A wet model.
+<eos>",2,0,1,1,4
+Give me a joke about a funeral.,"The difference between a good funeral and a bad one is the difference between a good day and a bad day.
+<eos>",2,1,1,0,4
+Make me laugh with a music pun.,"What do you call a music store that is always on the road?
+A nomad record store
+<eos>",1,1,1,1,4
+Give me a joke about social media.,"What do you call a social media post that is not a meme?
+A post.<eos>",2,0,1,1,4
+Can you come up with a joke about a famous psychologist?,"Abraham Maslow was a good psychologist. He knew the meaning of life.
+<eos>",2,0,1,1,4
+Make me laugh with a joke about dinosaurs.,What do you call a dinosaur that is always getting into trouble? A Dino-head.<eos>,2,1,1,1,5
+Give me a joke about toilet paper.,"The only time I have a problem with my toilet paper is when I have to fold it in half.
+<eos>",2,1,1,1,5
+Give me a joke about a political event.,"The Republican party is like a big family. And the Democratic party is like a big family. And the third party is like a bunch of people who don't have a family.
+<eos>",2,2,1,0,5
+Make me laugh with a joke about a cat.,"What do you call a cat that's always getting into trouble? A mischievous feline.
+<eos>",2,0,1,1,4
+Give me a joke about marriage.,"If you have a good relationship with your wife, you have a good relationship with your wife.
+<eos>",2,0,1,1,4
+Give me a joke about the water cycle.,"What do you call a water molecule that is in the process of evaporating? A water vapor.
+<eos>",2,0,1,1,4
+Give me a joke about politics.,The Republican Party is like a bunch of people who are so afraid of the future that they want to go back to the 19th century.<eos>,2,1,1,0,4
+Make me laugh with a joke about marriage.,My wife and I are in a fight and she said she's not coming back to me. I guess I'll have to go to the store and buy a new one.<eos>,2,1,1,0,4
+Give me a joke about a kitchen utensil.,"What do you call a kitchen utensil that is not a spatula or a knife? A spatula knife.
+<eos>",2,0,1,1,4
+Make me laugh with a joke about beer.,"What do you call a beer that is not a good beer? A bad beer.
+<eos>",2,0,1,1,4
+Create a joke about elements.,"What do you call a group of hydrogen and oxygen molecules? A hydrogen bomb.
+<eos>",2,0,1,1,4
+Make me laugh with a joke about a play on words.,"What do you call a man who is always getting his head stuck in the clouds? A sky-per
+<eos>",2,1,1,1,5
+Make me laugh with a joke about the internet.,What do you call a website that is not very popular? A dead link.<eos>,2,0,1,1,4
+Give me a joke about body parts.,"What do you call a man with a long head and a big back? A good head and a good back.
+<eos>",2,0,1,1,4
+Make me laugh with a joke about a bad husband.,My wife and I are going to get a divorce. She said I was a bad husband. I guess I'll have to go to a different side of the bed.<eos>,2,0,1,0,3
+Give me a joke about a dentist's office.,"The dentist office is a very good place to get a good night's sleep.
+<eos>",2,1,1,1,5
+Give me a joke about a fast food worker.,"What do you call a fast food worker who is always giving out free food? A gourmand
+<eos>",2,1,1,1,5
+Give me a joke about a vampire's social life.,"The vampire community is a very small one. I have to go to the same party as the same people for like 10 years.
+<eos>",2,1,1,0,4
+Make me laugh with a joke about cows.,"What do you call a cow that is always getting sick? A moo-ing mess.
+<eos>",2,1,1,1,5
+Make me laugh with a joke about science.,"What do you call a scientist who is always making discoveries? A genius.
+<eos>",2,0,1,1,4
+Give me a joke about a dating website.,"The dating app Tinder is a good way to get a date. But I've been on it for a year and I still haven't found my perfect match. I guess I'll have to go to a real bar.
+<eos>",2,0,1,0,3
+Make me laugh with a joke about movie puns.,What do you call a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to a movie that is a sequel to,2,0,0,0,2
+Give me a joke about a bad boyfriend.,"My ex-boyfriend is a good guy. I have a new one now.
+###<eos>",2,1,1,1,5
+Create a joke about royal etiquette.,"The Queen is a very good cook. But she never has a chef. She just has a bunch of people to do the cooking for her.
+<eos>",2,0,1,0,3
+Make me laugh with a joke about turtles.,"What do you call a turtle that's always getting lost?
+A wanderer shell.<eos>",2,1,1,1,5
+Make me laugh with a joke about a historical figure.,"Abraham Lincoln was a very tall man. I guess that's why he was a good fit for a horse.
+<eos>",2,0,1,1,4
+Make me laugh with a joke about a chiropractor.,What do you call a chiropractor who is always cracking jokes about his back? A funny back crackin' chiropractor.<eos>,2,1,1,0,4
+Make me laugh with a joke about immigration.,The funniest thing about the immigrant community is that they are so good at making a living. They are like a bunch of people that have a lot of skills and are very good at making money.<eos>,2,0,1,0,3
+Give me a joke about doing laundry.,"What do you call a laundry detergent that is not working? A stinky detergent.
+<eos>",2,1,1,1,5
+Give me a joke about computer security.,What do you call a computer that is not secure? A weak link.<eos>,2,0,1,1,4
+Give me a joke about a search engine.,"What do you call a search engine that is always wrong?
+A bad web site.<eos>",2,0,1,1,4
+Make me laugh with a joke about babysitting.,"The babysitter is a very good person. She is very good at making me want to be a child again.
+<eos>",2,1,1,1,5
+,,1.91,0.55,0.92,0.66,4.04
+,,95.5,27.5,92,66,67.33333333

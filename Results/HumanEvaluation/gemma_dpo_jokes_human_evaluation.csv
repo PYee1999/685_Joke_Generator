@@ -1,0 +1,111 @@
+Prompts,Jokes,PromptScores,FunnyScores,GrammarScores,LengthScores,TotalScores
+Make me laugh with a joke about Christmas., What do you call a baby Santa who is always eating cookies and milk? chubby santa.<eos>,2,2,1,1,6
+Give me a joke about a common household task.," Okay, here is a joke about a common household task: Why did the homeowner put a lock on their refrigerator door? To keep the dinner thieves out.<eos>",2,1,1,0,4
+Make me laugh with a joke about an unusual diet., Why did the vegetarian chef cross the road? ### Answer: To get to the other side of the lettuce.<eos>,1,0,1,0,2
+Give me a joke about a job interview.,"Sure, here's your joke: Why did the job interviewer eat his coat? He said he needed a coat of paint.<eos>",2,1,1,0,4
+Make me laugh with a joke about a relationship., My husband told me the other day that I should wear more perfume to attract men. I guess he's planning on moving into the kitchen soon.<eos>,2,1,1,0,4
+Can you come up with a pun about time?,"Sure, here is a pun about time:<br>Why did the clock skip a second?<br>Because he didn't want to be tardy.<eos>",2,2,1,0,5
+Can you come up with a joke about dolphins?,"Sure, here is a joke about dolphins:** Why did the dolphin cross the ocean? To get to the other surf side.<eos>",2,0,1,0,3
+Tell me a joke about a high school reunion., My high school reunion was the night life peaked with lots of adult beverages.<eos>,2,0,1,1,4
+Give me a joke about a math joke that's a play on words., Funny mathematicians don't calculate very well. They estimate and round up.<eos>,2,1,1,1,5
+Make me laugh with a joke about the DMV., Why did the DMV employee cross the road? To get to the other parking lot side.<eos>,2,0,1,1,4
+Make me laugh with a joke about procrastination., What does call a procrastinator who can't start a project on time? A lazy procrastinator.<eos>,2,1,1,1,5
+Make me laugh with a joke about a horse.," Sure, here is a joke about a horse: Why did the horse cross the road?... Please finish the joke by coming up with a punch line.<eos>",2,0,1,0,3
+Give me a joke about a job interview.," A man was applying for a job at a bookstore. When asked about the reason for his interest, he responded, ""I am a bookworm.""<eos>",2,0,1,0,3
+Make me laugh with a joke about a plane., What do you call a plane that’s always late? A tardy jet.<eos>,2,1,1,1,5
+Give me a joke about technology malfunctioning., An engineer working on a computer suddenly realized that his computer was overheating due to overheating.<eos>,2,0,0,0,2
+Make me laugh with a joke about a disease.,"Have you heard about COVID-19? Apparently, it's giving people the chance to have a close up with death.<eos>",2,1,1,0,4
+Make me laugh with a joke about Jehovah's Witnesses., Jehovah's Witnesses have one hell of a lot of scripture.<eos>,2,1,1,1,5
+Give me a math joke.,"Sure, here you go: Why did the two mathematicians cross the road?_ Answer: To get to the other side of pi.<eos>",2,0,1,0,3
+Make me laugh with a joke about a circus animal., Why did the elephant cross the river? To get to the other tusk side.<eos>,1,0,1,1,3
+Can you come up with a joke about an exorcist?,"Certainly, here is the joke: Where do you store an exorcist's office?... In hell's kitchen.<eos>",2,2,1,1,6
+Make me laugh with a joke about Batman., Bats take the cake for best superhero sidekicks.<eos>,1,1,1,1,4
+Give me a joke about summer camps., Why did the camp counselor yell at the campers?<br> ### Answer:** Because the camp counselor had to deal with so much mess-up.<eos>,2,0,0,0,2
+Create a humorous joke about paranoia.,"Sure, here's one:
+
+You're convinced that people are ALWAYS watching you, hence why you ALWAYS say ""excuse me"" when someone actually goes to excuse me.<eos>",2,1,0,0,3
+Tell me a joke about adoption.,Why did the adoptive parents name their baby Echo?<eos>,2,0,0,1,3
+Give me a joke about a beer slogan.,What's the slogan for the first beer ever produced?<eos>,2,0,0,1,3
+Give me a joke about a date.,Sure. Here has been a joke about a date: Where do wealthy people go on dates? Will they get some money in the bank?<eos>,2,0,1,0,3
+Tell me a joke about clickbait., What do you call clickbait that doesn't contain any bait of any kind? ### Answer: Clickbait Advertising<eos>,2,1,1,0,4
+Make me laugh with a joke about social media.," Okay, here's the joke:<br> What do you call a social media post that is popular?<br> A trend.<br> Have a great day!<eos>",2,0,1,0,3
+Tell me a joke about a therapy session.,Why did I cancel my therapy session? Because I was feeling bipolar.<eos>,2,2,1,1,6
+Give me a joke about a book title.,"Sure, here's your joke: If you like books, you will appreciate this joke. A book title that will probably never be finished, but will soon be done, is ""The Book That Time Forgot.""<eos>",2,1,1,0,4
+Create a joke about a funeral., What do you call a funeral service that's really popular? A packed hearse.<eos>,2,2,1,1,6
+Give me a joke about politics.,Political scientist discovers that both ends of the spectrum have been wrong.<eos>,2,1,1,1,5
+Make me laugh with a joke about a diet., Why did the vegetarian cross the road? To get to the other salad side<eos>,2,0,1,1,4
+Give me a joke about an apology., What do you call an apology that is given in advance of an action?\\The response should be prompt and adhere to the requested format. ## Joke Answer:** Correctly Timing Your Apology.<eos>,2,1,1,0,4
+Give me a joke about outdated technology.,Sure. Here's one: What do you call a computer that's older than you?... An antique floppy disk.<eos>,2,1,1,0,4
+Make me laugh with a joke about a lightbulb.," Sure, here's one: Why not make lightbulbs look rounder and more aerodynamic? To make the perfect speed bump.***<eos>",2,0,1,0,3
+Give me a joke about being out of touch with modern culture.,"Sure, here's the joke: An older woman is sitting on the street corner, watching people walk by, waiting for the bus. And she sees a young group of people walking, dressed in white, holding colorful flags, chanting ""This is what it feels like to be young!"".<eos>",1,0,1,0,2
+Give me a joke about marriage.," Why did they get rid of the old queen bed, too loud in this bed time.<eos>",1,1,1,1,4
+Can you come up with a joke about a stalker?,Sure here's one: Why did the stalker cross the street? To get to the other sidewalk.<eos>,2,0,1,1,4
+Make me laugh with a joke about a chicken.,"Sure, here you go: What do you call a chicken that's always getting dirty? A filthy bird.<eos>",2,1,1,1,5
+Give me a joke about a spy agency.,"Sure, here you go-: Are you aware that I'm the manager of the agency known as Spy Agency MK 18?<eos>",2,0,1,0,3
+Make me laugh with a joke about selfies., Why did the photographer decide to make a selfie a living?<eos>,2,0,1,1,4
+Make me laugh with a joke about a terrorist organization., I hear the terrorist organization Osama Bin Laden was the mastermind behind a bombing raid on a beach resort in Mexico. I bet you are thinking that the terrorist organization Osama Bin Laden would not be able to afford a beach resort in Mexico. But Osama Bin Laden was able to afford the resort. He was able to afford anything he wanted.<eos>,2,0,1,0,3
+Give me a joke about a historical figure.,Did you know that George Washington was a big fan of the constitution?...Even though he couldn't spell it.<eos>,2,2,1,0,5
+Give me a joke about a conversation., Why did the soccer player wear glasses? To see if he was playing back-up.<eos>,2,1,1,1,5
+Make me laugh with a joke about Harry Potter., Why did the wizarding world demand the muggleborn champion to participate in the final battle for the fate of the world?<eos>,2,0,0,0,2
+Give me a joke about online shopping., What do you call an online shopping site that is always giving away freebies? Free gift wrap.<eos>,2,1,1,1,5
+Give me a joke about body parts.,"Sure, Here is that joke for you, ",0,0,0,1,1
+Give me a joke about a woman's preferences.,What is the difference between a woman's preference and an assortment of grain?### Answer:A woman's preference is more selective.<eos>,2,2,1,0,5
+Make me laugh with a joke about office etiquette.," Office Coffee Faux Pas  If you thought office coffee doesn't matter, what is the temperature you prefer?<eos>",2,0,1,0,3
+Give me a humorous joke about a birthday party., Why did the birthday party contain a lot of hotdogs? Because it was a pig-tail affair.<eos>,2,1,1,1,5
+Make me laugh with a joke about a potato., What do you call a potato that's always getting lost? ### Answer: A spudding nomad<eos>,2,2,1,1,6
+Tell me a joke about airport etiquette., What do you call a traveler standing idly at the gate terminal while waiting for their flight? Waiting passenger.?<eos>,2,0,1,0,3
+Make me laugh with a joke about math.," You know the Pythagorean theorem, right? Sure, I do. Here's why math is so much more stylish than fashion.***<eos>",2,0,1,0,3
+Create a joke about a death investigation.,Why did the detective need help finding the killer? Because they couldn't tell which way to go.<eos>,1,0,1,0,2
+Give me a joke about a month.,Why did the month of December have a cold? Because it was freezing in NY.<eos>,2,1,1,1,5
+Give me a joke about a job performance review.,"Did you know that when you get fired, you get the severance pay if your manager loses weight?<eos>",2,2,1,1,6
+Give me a joke about the Pope.,Why do you call a Pope a hot head? ### Answer:Because he's got a fiery head<eos>,2,1,1,1,5
+Give me a joke about a bad comedian.,Have you ever heard a joke so bad that it makes you wish you would have canceled on everything else planned that night?<eos>,2,2,1,0,5
+Give me a joke about a medical condition., What do you call a stomach that doesn't eat food? A gastric void.<eos>,2,2,1,1,6
+Make me laugh with a joke about being single., Single ladies know the real meaning of the word 'Netflix and chill'. HaHa!<eos>,2,1,1,1,5
+Make me laugh with a joke about a musician.,"If a musician wants to get ahead of the curve, he should use a curved neck guitar.<eos>",2,2,1,1,6
+Can you come up with a joke about an octopus?,"Sure, here's a joke about an octopus: Why did the Octopus cross the road?... To get to the other shell side.<eos>",2,0,1,0,3
+Give me a joke about fashion advice.,"Sure, here you go:<br>Sure, here's a joke:<br>Why won't fashion advice be trendy?<br>Because it's always out of style.<eos>",2,2,1,0,5
+Give me a joke about a funeral.,"Sure, here you go: Why did the mourners gather around the open casket? To see if they could get the deceased to move.<eos>",2,1,1,0,4
+Make me laugh with a music pun.," Sure, here is a music pun for you: A record player is a powerful tool for music purists.**<eos>",2,0,1,1,4
+Give me a joke about social media., Do you know what it's called when you post a photo on Instagram but nobody likes it?... A silent selfie<eos>,2,1,1,0,4
+Can you come up with a joke about a famous psychologist?,"Sure, here's one about Freud.
+
+Freud must have felt like his pants were wet when he was first encountering it.<eos>",2,1,1,0,4
+Make me laugh with a joke about dinosaurs., Sure. Here you go: The Triceratops was very proud of his hair. No one else could have styled their horns like that.<eos>,2,0,1,0,3
+Give me a joke about toilet paper., What do you call toilet paper that's run out of paper? A naked butt crack.<eos>,2,1,1,1,5
+Give me a joke about a political event., Why did the politician cross the road? To get to the other partisan side.<eos>,2,1,1,1,5
+Make me laugh with a joke about a cat., Why did the cat cross the road? To get to the other paw side.<eos>,2,0,1,1,4
+Give me a joke about marriage.,My wife's going to adopt her kids.<eos>,1,1,1,1,4
+Give me a joke about the water cycle.," A meteorologist was studying clouds in the sky, after his research he wanted to take a water droplet vacation.<eos>",2,0,1,0,3
+Give me a joke about politics., Why did the politician have an emerald parrot? Because he always 'parrot' about issues.<eos>,2,1,0,1,4
+Make me laugh with a joke about marriage.," My spouse refuses to tolerate me snoring loudly in bed, so I'm thinking of getting a small drum and practicing my own unique brand of percussion.<eos>",2,2,1,0,5
+Give me a joke about a kitchen utensil.,What is called a spatula reversed?  A turner and spoon.<eos>,2,1,1,1,5
+Make me laugh with a joke about beer.,"Sure, here you go:Why did the beer salesman cross the road?...Because he was tired of seeing all the other races.***<eos>",2,0,1,0,3
+Create a joke about elements.,"Sure, here is a joke about elements:  What do you call hydrogen that doesn't exist? Oxygen.<eos>",2,1,1,1,5
+Make me laugh with a joke about a play on words.,"Sure, here's the joke: If you are thirsty, you must be thirsty for a drink.<eos>",2,0,1,1,4
+Make me laugh with a joke about the internet.,"Have you ever searched for an internet connection? Yeah, that's probably me right now<eos>",2,0,1,1,4
+Give me a joke about body parts.,Why did the doctor give the patient a prescription on the ears?<eos>,2,0,0,1,3
+Make me laugh with a joke about a bad husband., Why did the bad husband cross the road?- To get to the other marital side.<eos>,2,0,1,1,4
+Give me a joke about a dentist's office., Sure. What do you call a dentist's office that's open late?  A practice that offers fillings in the night.<eos>,2,1,1,0,4
+Give me a joke about a fast food worker.,"Sure, here's the joke: What do you call a fast-food worker who is always running around and getting orders out quickly? McSpeedy McFreaky.<eos>",2,2,1,0,5
+Give me a joke about a vampire's social life.,What do you call a vampire who has a lot of social media followers? An influencer Dracula.<eos>,2,1,1,1,5
+Make me laugh with a joke about cows., Why did the farmer put a coat with rain boots on the cow? In case it moo-rains.<eos>,2,0,1,1,4
+Make me laugh with a joke about science., What do you call a scientist who's always changing his mind about stuff? A fickle physicist.<eos>,2,1,1,1,5
+Give me a joke about a dating website.,"A dating website is called Tinder, Which is an idea app.<eos>",2,0,1,1,4
+Make me laugh with a joke about movie puns.," I'm eating my cereal while watching ""The Wizard of Oz."" Do you have any wheat-a-butter advice for me?<eos>",2,0,1,0,3
+Give me a joke about a bad boyfriend.,"Sure, here is a joke about a bad boyfriend: You're always on my mind, that's why I'm sorry for the earwax, my darling.<eos>",2,1,1,0,4
+Create a joke about royal etiquette.,What do you call a royal sandwich that is cut in two separate pieces and eaten separately? An incomplete coronation.---<eos>,2,1,1,0,4
+Make me laugh with a joke about turtles., Why did the turtle cross the road? Because he was tired of seeing the slow down side of life.<eos>,2,0,1,1,4
+Make me laugh with a joke about a historical figure.,"Sure, here you go:
+
+Why did Thomas Jefferson put a lock on his diaries?
+
+...To prevent George Washington from reading them.<eos>",2,1,1,0,4
+Make me laugh with a joke about a chiropractor., Why did the chiropractor cross the road? ### Answer: To get to the other spinal side.<eos>,2,1,1,1,5
+Make me laugh with a joke about immigration.,The new immigrant in town had to learn the slang slang. Now he will never be slangin' slang again.<eos>,2,0,1,0,3
+Give me a joke about doing laundry.,I was sorting out some laundry today and found a sock that I made a mess of. ### Delivery: ___ I had to call the sock a mess up because it was full of sweat and dirt and when I grabbed hold of the sock it started to spread the messiness around.<eos>,2,0,0,0,2
+Give me a joke about computer security.,"Sure, here's a joke about computer security:Why did the computer scientist keep the secret key in his sock drawer?<eos>",2,0,0,0,2
+Give me a joke about a search engine.,"Sure, here is the joke:--- What do you call a search engine that is always wrong?--- An inaccurate engine.<eos>",2,1,1,0,4
+Make me laugh with a joke about babysitting., Why did the babysitter cross the road? To get to the other playground side.<eos>,2,0,1,1,4
+,,1.91,0.7,0.89,0.5,4
+,,95.5,35,89,50,66.66666667
