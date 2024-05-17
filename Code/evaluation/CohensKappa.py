@@ -1,4 +1,3 @@
-from krippendorff import krippendorff
 import pandas as pd
 import os
 import numpy as np
@@ -21,20 +20,11 @@ def getCohenKappa(humfile, llmfile):
     humdf = pd.read_csv('../../Results/HumanEvaluation/' + humfile + '.csv')
     llmdf = pd.read_csv('../../Results/LLMEvaluation/' + llmfile + '.csv')
     ck = 0
-    alpha = 0
-    counts = []
     for i in range(2, 5):
         a = humdf.iloc[:, i].values[0:100].astype(int).tolist()
         b = llmdf.iloc[:, i].values[0:100].astype(int).tolist()
-        count = 0
-        for item1, item2 in zip(a, b):
-            if item1 == item2:
-                count += 1
-        counts.append(count)
-        data = [a, b]
-        alpha += krippendorff.alpha(data)
         ck += cohen_kappa(a, b)
-    print("Percentage", counts, np.mean(np.array(counts)))
+    print("Cohen's Kappa", ck/3)
 
 
 human_path = '../../Results/HumanEvaluation'
