@@ -15,7 +15,7 @@ def loadEval(start, end, file_name, folder_path, checkpoint_folder):
     scoresFinetuned = []
     scoresDPO = []
     scoresDPO2 = []
-    api_key = '3f06bb7945192b6e58e9d4acd1d265fe51a1478015fb5cac5d67c3ca274b3c94'
+    api_key = '' # Add api key here
     endpoint = 'https://api.together.xyz/v1/chat/completions'
     for i in range(len(prompts)):
         prompt = prompts[i]
