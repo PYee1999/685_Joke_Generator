@@ -6,8 +6,9 @@ UMass Amherst CS-685 Project for Text-based Joke Generation Large Language Model
   - promptCreation (createPrompt.py) : Contains code to create prompts from shortjokes dataset and create jokes dataset.
   - evaluation (rateJokes.py) : Contains code to rate LLM generated jokes based on promptMatching, Funniness, Grammar and Length.
   - evaluation (evalJokes.py) : Contains code to compare 2 jokes and give the better one for each model.
-  - training (CS685_Joke_Generator_LoRA+DPO.ipynb) : Contains code to train models on training data, and generate LoRA-only test results and DPO training data (Note: This notebook runs on Colab. To see the code on Colab, click on this link: https://colab.research.google.com/drive/1_l5TcKC0JJs5eAvXjkjaeT2nVRhHrjRy?usp=sharing)
-
+  - training (CS685_Joke_Generator_LoRA+DPO.ipynb) : Contains code to train models on fine-tuning data, and generate LoRA-only test results and DPO training data (Note: This notebook runs on Colab. To see the code on Colab, click on this link: https://colab.research.google.com/drive/1_l5TcKC0JJs5eAvXjkjaeT2nVRhHrjRy?usp=sharing)
+  - DPO training (DPO_training.ipynb): Contains code to train models on DPO training data, and generate LoRA+DPO test results (Note: This notebook runs on Colab. To see the code on Colab, click on this link:https://colab.research.google.com/drive/1jd1C_d5L5ZjjqJR0SYsgxXF2I2gq8KrT?usp=sharing)
+  
 - Resources Folder: Contains all required datasets.
   - Dataset: Contains the original shortjokes dataset along with the generated training, dpo and testing datasets.
   - GeneratedJokes: Contains all LLM generated jokes for all models (pretrained, finetuned and dpo).
